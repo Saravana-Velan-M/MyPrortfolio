@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortFolio</title>
+    <!--this is my css-->
+    <link rel="stylesheet" href="Myportfolio.css">
+    <!-- this is google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div class="head">
+        
+            <h2>SARAVANA.WEB</h2>
+        
+        <div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-menu-toggle" onclick="openbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!--side-navbar-->
+    <div class="disable"><!--this media query-->
+        <div class="side-navbar">
+            <div class="closebar" onclick="closebar()"><i class="fa-solid fa-xmark"></i> </div>
+            <div class="side-navbar-links">
+                <ul>
+                    <li class="side-navbar-link"><a href="#Home">Home</a></li>
+                    <li class="side-navbar-link"><a href="#about">About</a></li>
+                    <li class="side-navbar-link"><a href="#skills">Skills</a></li>
+                    <li class="side-navbar-link"><a href="#projects">Project</a></li>
+                    <li class="side-navbar-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--hero section-->
+    <section id="Home">
+        <div class="home-section">
+            <div class="home-intro">
+                <p >FRONT-END DEV & WEB DESIGN</p>
+                <h1>Hi, I am <span>Saravana <br>Velan M</span></h1>
+                <h5>I build responsive, modern websites<br>& My PortFolio.</h5>
+                <!--
+                <div class="buttons">
+                    <button class="btn hire">Hire me</button>
+                    <button class="btn download">Download CV</button>
+                </div>
+                -->
+            </div>
+            <div class="img">
+                <div class="bg-skew"></div>
+                <img src="assets/Screenshot_20250907_010322.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--about section-->
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="assets/about (1).jpg" alt="">
+        </div>
+        <div class="about-content">
+            <div class="about-details">
+                <h5 class="section-subtitle">MY INTRODUCTION</h5>
+                <h2>About Me</h2>
+                <p>
+                    I'm Saravana Velan an aspiring Full Stack Developer with strong knowledge in HTML, CSS, JavaScript,
+                    and React.
+                    Currently pursuing my BCA degree, I have a keen interest in building responsive web applications and
+                    learning new technologies. My goal is to work in a reputed IT company where I can contribute to
+                    real-world projects, improve my coding skills, and grow as a software professional.
+                </p>
+
+                <p class="slogan"><em>“Design is intelligence made visible. Code brings it to life.”</em></p>
+                <div class="about-details">
+                    <p><strong>Name:</strong> Saravana Velan M</p>
+                    <p><strong>Date of birth:</strong> Decembar 27, 2006</p>
+                    <p><strong>Address:</strong> Chengalpattu, Tamil Nadu, India</p>
+                    <p><strong>Pin code:</strong> 603111</p>
+                    <p><strong>Email:</strong> saravanavelan.m12345@gmail.com</p>
+                    <p><strong>Phone:</strong> +91-7418342361</p>
+                </div>
+                <div class="interests">
+                    <span><i class="fas fa-music"></i> Music</span>
+                    <span><i class="fas fa-plane"></i> Travel</span>
+                    <span><i class="fas fa-film"></i> Movie</span>
+                    <span><i class="fas fa-futbol"></i> Sports</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--skill section-->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-slider">
+
+            <div class="skill-card">
+                <img src="assets/html.png" class="skill-icon" alt="HTML" />
+                <h4>HTML</h4>
+                <div class="level-label">95%</div>
+            </div>
+            <div class="skill-card">
+                <img src="assets/css.png" class="skill-icon" alt="CSS" />
+                <h4>CSS</h4>
+                <div class="level-label">90%</div>
+            </div>
+            <div class="skill-card">
+                <img src="assets/javascript.png" class="skill-icon" alt="JavaScript" />
+                <h4>JavaScript</h4>
+                <div class="level-label">70%</div>
+            </div>
+
+            <div class="skill-card">
+                <img src="assets/react.png" class="skill-icon" alt="React" />
+                <h4>React</h4>
+                <div class="level-label">50%</div>
+            </div>
+
+            <div class="skill-card">
+                <img src="assets/github.png" class="skill-icon" alt="GitHub" />
+                <h4>GitHub</h4>
+                <div class="level-label">70%</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--project section-->
+    <section id="projects" class="projects-section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="assets/e-commerce-project.PNG" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Fashion Store</h3>
+                    <p>HTML, CSS, JS</p>
+                    <a href="https://saravanavelanm12345-lang.github.io/e-commerce-web/" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/portfolio-project.PNG" alt="Project 2" />
+                <div class="project-info">
+                    <h3>PortFolio</h3>
+                    <p>HTML, CSS, JS</p>
+                    <a href="" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/booksky-project.PNG" alt="Project 3" />
+                <div class="project-info">
+                    <h3>BookSky</h3>
+                    <p>HTML, CSS, JS</p>
+                    <a href="" target="_blank">View Project</a>
+                </div>
+            </div>
+
+
+            <!-- Add more cards if needed -->
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea name="" id="" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <!--footer section-->
+    <section class="footer" id="footer">
+        <div class="footer-container">
+            <h2>SARAVANA.WEB</h2>
+            <p>Crafting frontend experiences with code & creativity ✨</p>
+
+            <a href="" title="GitHub Profile">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href=""><i
+                    class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+
+
+            <p>© 2025 Saravana Velan.com</p>
+        </div>
+    </section>
+
+
+    <script src="Myportfolio.js"></script>
+</body>
+
+</html>
